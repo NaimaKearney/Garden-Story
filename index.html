@@ -1,46 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
         <title>Grow your garden!</title>
         <link rel = "stylesheet" href = "style.css">
-    </head>
+</head>
     <body>
-        <h1>Grow Your Garden: You Pick</h1>
-        <script src="script.js"></script>
-        <div>
-            <div id="grow">Grow</div>
-            <button id="startSun">Sun</button>
-            <button id="startWater">Water</button>
-        </div>
-        <div class="container"> 
-            <div class ="storyBoard">
-                <ul>
-                    <li>
-                        <div class="storyTime">
-                            <h1>Tomato</h1>
-                            <p>Plant tomato seedlings 10 inches apart.</p>
-                        </div>
-                     </li>
-                     <li>   
-                        <div class="storyTime">
-                            <h1>Pepper</h1>
-                            <p>Plant pepper seedlings 8 inches apart.</p>
-                        </div>
-                    </li>
-                    <li><div class="storyTime">
-                        <h1>Kale</h1>
-                        <p>Plant kale seedlings 8 inches apart.</p>
-                        </div>
-                        
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div>
-            <div id="startOver">Start Over</div>
-            <button id="reset">Reset</button>
+
+        <div class="container1">
+         <header>
+            <h1>Grow Your Garden: You Pick</h1>
+            <img src="https://images.unsplash.com/photo-1586094626935-3e53143fc12d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=685&q=80">
+                  
+        </header>
         </div>
 
+
+        <script src="script.js"></script>
+        
+        
+        <div class="flex-container"> 
+                        <div class="storyHint">
+                            <h1>Tomato</h1>
+                            <p>Plant tomato seedlings 10 inches apart.</p>
+                            <button id="startGrow">Plant tomato</button>
+                        </div>
+                     
+                     
+                        <div class="storyHint">
+                            <h1>Pepper</h1>
+                            <p>Plant pepper seedlings 8 inches apart.</p>
+                            <button id="startGrow">Plant pepper</button>
+                        </div>
+                
+                    <div class="storyHint">
+                        <h1>Kale</h1>
+                        <p>Plant kale seedlings 8 inches apart.</p>
+                        <button id="startSun">Plant kale</button>
+                        </div>
+                
+                        
+                    
+            
+        </div>
+
+        <div>
+            
+<label for="startPlant" class="startPlant"><h3>Month Planted (April-August)</h3></label>
+<input type="text" id="startPlant" name="startPlant">
+<label for="pickPlant" class="pickPlant"><h3>Month Picked (May-August)</h3></label>
+<input type="text" id="pickPlant" name="pickPlant">
+            
+
+            <button id="startSun"><h3>Sun</h3></button>
+            <button id="startWater"><h3>Water</h3></button>
+        
+        
+        <section class="harvest">
+            <div class="harvest-image">
+                <img src="https://images.unsplash.com/photo-1593723563265-bb00553c6c53?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="image">
+       
+                <div class="tomato-harvest">You have harvested!</div>
+            </div>
+        </section>
+       
+
+        <button onclick="startOver()">Reset</button>
         
     </body>
 </html>

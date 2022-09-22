@@ -1,3 +1,42 @@
 body {
     background-color: brown;
-}
+    
+      }
+h1 {
+    color: white;
+    text-align: left;
+    }
+      
+p {
+  font-family: verdana;
+      }
+
+.container1{
+        display: flex; 
+        background-color: black;
+        color: white;
+      }
+ .flex-container {
+        display: flex; 
+        flex-direction: row;
+        background-color: green;
+        color:white;
+        align-content: space-between space-around;
+        justify-content: left;
+
+      }
+  .image {
+        display: block;
+        width: 40%;
+        height: auto;
+      }
+      .tomato-harvest {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
+      }
+    .startPlant {
+      color: white;
+    }
